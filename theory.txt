@@ -1,0 +1,189 @@
+{
+Note: C++ is case-sensitive: "cout" and "Cout" has different meaning.
+
+Note: Every C++ statement ends with a semicolon ;.
+
+Note: The body of int main() could also been written as:
+int main () { cout << "Hello World! "; return 0; }
+
+Remember: The compiler ignores white spaces. However, multiple lines makes the code more readable.
+
+## Omitting Namespace
+std::  -> we can also use this  but have to write Everyline where the name should be written. But we use "using namespace std" on the top of the program like in first.cpp file.
+}
+
+{
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+}
+
+{
+    every statements should ends with semicolon (;). Otherwise compiler will show you error.
+
+    IMP: The statements are executed, one by one, in the same order as they are written. 
+    For example:
+    cout<< "Hello darling.";
+    cout<<"okay bye!!";
+    return 0;
+
+    OUTPUT:
+    Hello darling.
+    okay bye!!
+}
+
+{
+    for new line : \n -> it is used to change the paragraph.
+    another way to insert new line : endl.
+    for horizontal spaces : \t -> it creates the space.
+    for backslash in the sentence: \\ -> Inserts a backslash character (\).
+    for double quote : \"  -> Inserts a double quote character.
+
+    they are called Escape Sequence.
+}
+
+{
+    single line comment : //
+    multi-line comment : /* */
+}
+
+{
+   VARIABLES:
+   int -> stores integers values (whole number without decimal points).
+   Eg. int A = 1;
+
+   double -> stores the floating values (whole numbers with decimal points).
+   Eg. double myFloatNum = 1.99;
+
+   char -> stores single characters like 'a', 'B'. Char values are surrounded by single quotes.
+   Eg. char myLetter = 'D';
+
+   string -> stores full name or word like "Hello", "meow". Sting values are surrounded by double quotes.
+   Eg. string myText = "Fuck";
+   But to use string we must declear it in header like : #include <string>
+
+   bool - stores values with two states: true or false.
+   Eg. bool myBoolean = true;
+
+   SYNTAX: 
+   type variableName = value;
+}
+{
+    if you dont want to write the datatype then simply use 'auto' keyword. This will automatically determines the datatype. 
+
+    FOR EXAMPLE:
+    // Creating auto variables
+        auto myNum = 5; // int
+        auto myFloatNum = 5.99f; // float
+        auto myDoubleNum = 9.98; // double
+        auto myLetter = 'D'; // char
+        auto myBoolean = true; // bool
+        auto myString = string("Hello"); // std::string
+}
+{
+    anyone can update the value anytime like:
+
+    int myNum = 15;  // myNum is 15
+    myNum = 10;  // Now myNum is 10
+    cout << myNum;  // Outputs 10
+}
+
+{
+    can also use like this :
+
+    int myAge = 35;
+    cout << "I am " << myAge << " years old.";
+}
+
+{
+    if there is multiple datas and with same datatype then:
+    int x = 5, y = 6, z = 50;
+    cout<< x+y+z;
+
+    and if they has same datatype and same values then:
+    int x, y, z;
+    x = y = z = 50;
+    cout << x + y + z;
+}
+
+[
+    NOTE: always use the name for the program not only the characters like:
+    // Good
+    int minutesPerHour = 60;
+
+    // OK, but not so easy to understand what m actually is
+    int m = 60;
+]
+
+[
+    The general rules for naming variables are:
+
+    1. Names can contain letters, digits and underscores
+    2. Names must begin with a letter or an underscore (_)
+    3. Names are case-sensitive (myVar and myvar are different variables)
+    4. Names cannot contain whitespaces or special characters like !, #, %, etc.
+    5. Reserved words (like C++ keywords, such as int) cannot be used as names
+]
+
+{
+    There will be a point of time when we, programmers, have to deal with constant numbers like pi, points of a graph. Then we use 'const' keyword. This creates that variable unupgradable.
+
+    SYNTAX:
+    const int valueOfPI = 3.14; 
+}
+
+{
+    USERINPUT :
+    string x; 
+    cout << "your name";
+    cin >> x;
+    cout << "your name is : " << x;
+
+    cout is pronounced "see-out". Used for output, and uses the insertion operator (<<).
+
+    cin is pronounced "see-in". Used for input, and uses the extraction operator (>>)
+}
+
+
+{
+    OPERATES IN C++:
+    1. Arithmetic operator :
+    addtion, subtraction, multiplication, division, Modulus (%) Returns the division remainder, increment (++), Decrement (--).
+
+    2. Logical operator : In the logical.png ...
+     
+    3. Assignment operator : In the assignment.png ...
+
+    4. Comparison operator : In the comparison.png ...
+
+    5. Bitwise operator : In the Bitwise.png ... and also shifts : (left)
+    00000101  (5 in binary)
+    << 1 position
+    ------------
+    00001010  (10 in decimal)
+
+    (right)
+    00000101  (5 in binary)
+    >> 1 position
+    ------------
+    00000010  (2 in decimal)
+}
+
+{
+    + operator is used differently on string, that is -> concatenation. 
+    like:
+    string firstName = "BRANDON";
+    string lastName = "KARMA";
+    string fullName = firstName + " " + lastName;
+    cout << fullName;
+
+    OUTPUT: BRANDON KARMA
+
+    And also use append () function for this like:
+    string firstName = "BRANDON ";
+    string lastName = "KARMA";
+    string fullName = firstName.append(lastName);
+    cout << fullName;
+
+    OUTPUT: BRANDON KARMA
+}
